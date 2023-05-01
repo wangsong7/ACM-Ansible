@@ -2,11 +2,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-simon
+  name: hello-song
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: hello-simon
+    app: hello-song
