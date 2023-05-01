@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  tasks:
+  - name: GET (retrieve) configuration details, etc from Cradlepoint
+    ansible.builtin.uri:
+      url: https://www.cradlepointecm.com/api/v2/configuration_managers/3559293/
+      method: GET
+      return_content: true
+      status_code: [200, 202]
+      headers:
+        Content-Type: application/json
+        X-CP-API-ID: fb2cd089
+        X-CP-API-KEY: 75561db2745a299edc8b46cc65abfd48
+        X-ECM-API-ID: aeef533f-f36a-4cf5-87ba-95f98fc44b93
+        X-ECM-API-KEY: ac2eafcae488d95ecdc756fd8d127ff3d1633e5e
+    register: this
+    
