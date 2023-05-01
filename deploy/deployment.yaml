@@ -2,20 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-simon
+  name: hello-song
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-simon
+      app: hello-song
   template:
     metadata:
       labels:
-        app: hello-simon
+        app: hello-song
     spec:
       containers:
-      - name: hello-simon
-        image: paulbouwer/hello-kubernetes:1.8
+      - name: hello-song
+        image: gcr.io/sky-agents/agent-actuate-arm64:r22.11
         ports:
-        - containerPort: 8080
-
+        - containerPort: 62307, 48812, 10001
