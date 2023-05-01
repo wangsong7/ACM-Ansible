@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  tasks:
+  - name: build a container in R1900-624
+    ansible.builtin.uri:
+      url: https://www.cradlepointecm.com/api/v2/configuration_managers/3559293/
+      method: PUT
+      return_content: true
+      status_code: [200, 202]
+      body: "{{ lookup('ansible.builtin.file','song624.json') }}"
+      body_format: json
+      headers:
+        Content-Type: application/json
+        X-CP-API-ID: fb2cd089
+        X-CP-API-KEY: 75561db2745a299edc8b46cc65abfd48
+        X-ECM-API-ID: f3e52597-971f-4a0c-8190-84af2a3794b5
+        X-ECM-API-KEY: 22501be9ea13d42279271454b6ee3ca390da44e6
+    register: this
+    
