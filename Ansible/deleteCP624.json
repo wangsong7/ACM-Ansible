@@ -1,0 +1,14 @@
+{
+    "configuration": [
+        {
+            "system": {
+                "admin": {
+                    "product_name": "R1900-5GB"
+                },
+                "desc": "Melbourne - Ansible Test - Song",
+                "ui_activated": true
+            }
+        },
+        []
+    ]
+}
