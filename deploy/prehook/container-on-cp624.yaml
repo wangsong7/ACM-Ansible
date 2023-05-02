@@ -3,11 +3,11 @@ apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
   name: create-container
-  namespace: aap
+  namespace: song-ansible
   labels:
     app.kubernetes.io/name: hello-song
 spec:
-  tower_auth_secret: autocon-admin-password
+  tower_auth_secret: song-ansible-secret
   job_template_name: container-on-cp624
   extra_vars:
     #API_DOMAIN: demo.red-chesterfield.com
