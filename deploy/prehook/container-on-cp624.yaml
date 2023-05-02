@@ -3,7 +3,7 @@ apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
   name: create-container
-  namespace: song-ansible
+  namespace: aap
   labels:
     app.kubernetes.io/name: hello-song
 spec:
