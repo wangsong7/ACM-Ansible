@@ -8,7 +8,7 @@ metadata:
     #app.kubernetes.io/name: hello-song
 spec:
   tower_auth_secret: song-ansible-secret
-  job_template_name: container-on-cp624
+  job_template_name: cp624
   #extra_vars:
     #API_DOMAIN: demo.red-chesterfield.com
     # The AWS Route53 NS Record must exist with NameServers:
