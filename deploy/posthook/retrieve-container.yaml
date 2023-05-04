@@ -4,12 +4,12 @@ kind: AnsibleJob
 metadata:
   name: retrieve-container-cp624
   namespace: song-ansible
-  labels:
-    app.kubernetes.io/name: hello-song
+  #labels:
+    #app.kubernetes.io/name: hello-song
 spec:
   tower_auth_secret: song-ansible-secret
   job_template_name: retrieve-container-cp624
-  extra_vars:
+  #extra_vars:
     #API_DOMAIN: demo.red-chesterfield.com
     # The AWS Route53 NS Record must exist with NameServers:
     # ns1.f5cloudservices.com
