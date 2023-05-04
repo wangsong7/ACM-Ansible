@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: retrieve624
+  name: retrieve-container
   namespace: song-ansible
   #labels:
     #app.kubernetes.io/name: hello-song
