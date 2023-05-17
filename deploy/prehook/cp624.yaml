@@ -4,8 +4,8 @@ kind: AnsibleJob
 metadata:
   name: create-container
   namespace: song-ansible
-  #labels:
-    #app.kubernetes.io/name: hello-song
+  labels:
+    app.kubernetes.io/name: hello-song
 spec:
   tower_auth_secret: song-ansible-secret
   job_template_name: cp624
