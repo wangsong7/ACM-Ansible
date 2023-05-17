@@ -9,7 +9,8 @@ metadata:
 spec:
   tower_auth_secret: song-ansible-secret
   job_template_name: cp624
-  #extra_vars:
+  extra_vars:
+    hook_type: prehook
     #API_DOMAIN: demo.red-chesterfield.com
     # The AWS Route53 NS Record must exist with NameServers:
     # ns1.f5cloudservices.com
